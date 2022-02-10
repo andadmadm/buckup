@@ -20,5 +20,5 @@ jobs:
         with:
           source_repo: "https://github.com/bullfly666/percollect.git"
           source_branch: "mian"
-          destination_branch: "pro"
+          destination_branch: "percollect"
           github_token: ${{ secrets.PAT }}
