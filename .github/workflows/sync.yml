@@ -19,6 +19,6 @@ jobs:
         if: env.PAT
         with:
           source_repo: "https://github.com/bullfly666/percollect.git"
-          source_branch: "scf2"
+          source_branch: "main"
           destination_branch: "percollect"
           github_token: ${{ secrets.PAT }}
