@@ -1,4 +1,4 @@
-name: SyncToGitee #命名随意
+name: SyncToGitee(6dylan6) #命名随意
 on:       #触发条件，自己可以随意修改
   schedule:
     - cron: '13 1-23/4 * * *'
