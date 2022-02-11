@@ -1,7 +1,7 @@
 name: SyncToGitee #命名随意
 on:       #触发条件，自己可以随意修改
   push:
-    branches: [pro] #你的分支名
+    branches: [main] #你的分支名
   workflow_dispatch:
 jobs:
   build:
@@ -14,7 +14,6 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.GITEE_RSA_PRIVATE_KEY }}
         with:
           # 注意替换为你的 GitHub 源仓库地址
-          source-repo: git@github.com:https://github.com/andadmadm/buckup.git
+          source-repo: git@github.com:6dylan6/jdpro.git
           # 注意替换为你的 Gitee 目标仓库地址
-          source_branch: "pro"
-          destination-repo: git@gitee.com:https://gitee.com/chmc7/up.git
+          destination-repo: git@gitee.com:chmc7/up.git
