@@ -17,5 +17,4 @@ jobs:
           source-repo: git@github.com:https://github.com/andadmadm/buckup.git
           # 注意替换为你的 Gitee 目标仓库地址
           source_branch: "pro"
-          destination-repo: git@gitee.com:https://gitee.com/chmc7/buckup.git
-          destination_branch: "pro"
+          destination-repo: git@gitee.com:https://gitee.com/chmc7/up.git
