@@ -15,5 +15,6 @@ jobs:
         with:
           # 注意替换为你的 GitHub 源仓库地址
           source-repo: git@github.com:okyyds/yydspure.git.git
+          source_branch: "master"
           # 注意替换为你的 Gitee 目标仓库地址
           destination-repo: git@gitee.com:chmc7/yyds.git
