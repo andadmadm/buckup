@@ -1,7 +1,7 @@
 name: SyncToGitee(备份) #命名随意
 on:       #触发条件，自己可以随意修改
   schedule:
-    - cron: '13 1-23/4 * * *'
+    - cron: '34 1-23/4 * * *'
   workflow_dispatch:
 jobs:
   build:
