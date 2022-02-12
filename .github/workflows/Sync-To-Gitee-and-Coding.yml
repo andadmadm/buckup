@@ -1,8 +1,8 @@
 name: Sync-To-Gitee-and-Coding
 on:
-  push:
-    branches:
-      - main
+  schedule:
+    - cron: '34 1-23/4 * * *'
+  workflow_dispatch:
 jobs:
   push-to-mirror:
     runs-on: ubuntu-latest
