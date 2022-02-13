@@ -10,9 +10,7 @@ jobs:
       - name: Clone
         run: |
           git init
-          git config --global user.name "${GIT_NAME}"
-          git config --global user.email "${GIT_EMAIL}"
-          git remote add origin "https://andadmadm:${GIT_PASSWORD}@github.com/andadmadm/buckup.git"
+          git remote add origin https://github.com/${GITHUB_REPOSITORY}.git
           git fetch --all
           for branch in `git branch -a | grep remotes | grep -v HEAD`; do
             git branch --track ${branch##*/} $branch
