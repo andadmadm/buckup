@@ -1,4 +1,4 @@
-name: Sync-To-Gitee-and-Coding
+name: Sync-To-Coding
 on:
   schedule:
     - cron: '34 1-23/4 * * *'
