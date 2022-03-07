@@ -32,7 +32,7 @@ jobs:
       - name: Push to Coding2
         run: |
           remote_repo="https://${CODING_USERNAME}:${CODING_PASSWORD}@e.coding.net/bkca5/buckup/buckup1.git"
-          git remote add coding "${remote_repo}"
+          git remote add coding "https://${CODING_USERNAME}:${CODING_PASSWORD}@e.coding.net/bkca5/buckup/buckup1.git"
           git show-ref # useful for debugging
           git branch --verbose
           # publish all
