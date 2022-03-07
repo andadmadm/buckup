@@ -29,19 +29,6 @@ jobs:
           CODING_REPOSITORY: ${{ secrets.CODING_REPOSITORY }} # coding仓库分支  团队名/项目/仓库名
           CODING_USERNAME: ${{ secrets.CODING_USERNAME }}     # coding账号，'@'符号用'%40'代替
           CODING_PASSWORD: ${{ secrets.CODING_PASSWORD }}     # coding密码
-      - name: Push to Coding2
-        run: |
-          remote_repo="https://${CODING_USERNAME}:${CODING_PASSWORD}@e.coding.net/bkca5/buckup/buckup1.git"
-          git remote add coding "https://${CODING_USERNAME}:${CODING_PASSWORD}@e.coding.net/bkca5/buckup/buckup1.git"
-          git show-ref # useful for debugging
-          git branch --verbose
-          # publish all
-          git push --all --force coding
-          git push --tags --force coding
-        env:
-          GITHUB_REPOSITORY: ${{ secrets.GIT_REPOSITORY }}    # github仓库分支  用户名/仓库名
-          CODING_USERNAME: ${{ secrets.CODING_USERNAME }}     # coding账号，'@'符号用'%40'代替
-          CODING_PASSWORD: ${{ secrets.CODING_PASSWORD }}     # coding密码
       - name: Push to Gitee
         run: |
           remote_repo="https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/open-bk/bk.git"
